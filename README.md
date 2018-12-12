@@ -15,7 +15,8 @@ The improvments I plan include, but are not limited to:
 * Get rid of the SDL2 dependency and roll out different solution for input/output handling
 * Add logging features
 * Include unit testing
-* Start using CMake and Travis CI
+* Implement CMake/Premake
+* Start using Travis CI
 
 License:
 --------
