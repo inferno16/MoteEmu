@@ -7,3 +7,4 @@ roms/
 # Files
 test.cpp
 *.user
+*/*.dll
