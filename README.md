@@ -1,6 +1,12 @@
 MoteEmu
 =======
-A *Chip8* emulator written in C++. Serves mostly educational purose (me learning how emulation works).  
+A *Chip8* emulator written in C++. Serves mostly educational purose (me learning how emulation works).
+
+Build Status:
+-------------
+Platform | Compiler | Status
+:------: | :------: | :----:
+ Windows | MSVC (v141 toolset) | [![Build Status](https://travis-ci.com/inferno16/MoteEmu.svg?branch=master)](https://travis-ci.com/inferno16/MoteEmu)
 
 Dependencies:
 -------------

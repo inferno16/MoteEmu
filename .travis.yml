@@ -1,3 +1,6 @@
+git:
+  depth: false
+
 os: windows
 language: cpp
 compiler: MSVC
