@@ -1,0 +1,10 @@
+git:
+  depth: false
+
+os: windows
+language: cpp
+compiler: MSVC
+
+script:
+  - vendor/premake/windows/premake5.exe vs2017
+  - true && "/c/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/MSBuild/15.0/Bin/MSBuild.exe"

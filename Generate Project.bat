@@ -17,7 +17,7 @@ IF [%option%] EQU [] (
 )
 SET option=
 
-CALL vendor\premake\premake5.exe %action%
+CALL vendor\premake\windows\premake5.exe %action%
 ECHO.
 
 PAUSE
