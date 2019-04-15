@@ -22,7 +22,7 @@ The improvments I plan include, but are not limited to:
 - [ ] Add logging features
 - [ ] Include unit testing
 - [x] Implement ~~CMake~~/Premake
-- [ ] Start using Travis CI
+- [x] Start using Travis CI
 
 License:
 --------
