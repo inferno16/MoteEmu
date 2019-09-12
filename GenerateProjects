@@ -1,0 +1,35 @@
+#!/bin/bash
+
+premakeBinary="vendor/premake"
+
+unameOut="$(uname -s)"
+
+shopt -s nocasematch
+case "$unameOut" in
+    Linux*)
+        platform="linux"
+        defaultAction="gmake"
+    ;;
+    Darwin*)
+        platform="macosx"
+        defaultAction="xcode4"
+    ;;
+    Cygwin*|MinGW*)
+        printf "Please use \"GenerateProjects.bat\" in order to generate files on Windows\n"
+        exit 0
+    ;;
+    *)
+        printf "Unsupported platform: $unameOut!\n"
+        exit 0
+    ;;
+esac
+premakeBinary="vendor/premake/$platform/premake5"
+
+printf "Available actions: vs2005, vs2008, vs2010, vs2012, vs2013, vs2015, vs2017, 2019, gmake, gmake2, xcode4, codelite, clean\n"
+printf "Default action: $defaultAction\n\n"
+read -p "Enter action and press enter (leave blank to use default): " action
+if [[ -z "$action" ]]; then
+    action=$defaultAction
+fi
+printf "Running \"$premakeBinary $action\"\n\n"
+eval "$premakeBinary $action"

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 16
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MoteEmu", "MoteEmu\MoteEmu.vcxproj", "{01325C36-6D11-DBD1-7629-66A8E2874133}"
 EndProject
 Global

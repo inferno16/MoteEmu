@@ -1,9 +1,9 @@
 @ECHO OFF
 
-SET defaultAction=vs2017
+SET defaultAction=vs2019
 
 ECHO.
-ECHO Available actions: vs2005, vs2008, vs2010, vs2012, vs2013, vs2015, vs2017, gmake, xcode4, codelite
+ECHO Available actions: vs2005, vs2008, vs2010, vs2012, vs2013, vs2015, vs2017, vs2019, gmake, gmake2, xcode4, codelite, clean
 ECHO Default action: %defaultAction%
 ECHO.
 
